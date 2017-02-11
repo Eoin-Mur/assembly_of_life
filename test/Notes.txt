@@ -1,0 +1,14 @@
+-gdb will not read and lines if the intrsuctions are in caps
+-gdb will skip over a entire labels body if there is a commant not inline with an instuction
+	ie, above it. will 
+	-Put all comments inline (mov ax, bx ; some bullshite)
+	-or else at the begining to a label
+
+
+turns out you cannot pass the direct value to the
+std_out sys call need to pass via reference.... 
+this took an hour to figure out :(
+
+
+instruction pointer only gets set when you perform a call
+if you do just a jmp and try to ret it will core dump!
