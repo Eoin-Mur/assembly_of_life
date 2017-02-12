@@ -112,7 +112,7 @@ right_neighbor:
 		mov eax, 1
 		ret
 
- ; i <= c
+ ; i < c
 
 top_neighbor:
 	cmp eax, [COL_LEN]
