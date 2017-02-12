@@ -11,14 +11,17 @@ section .data
 	NL db 0xa
 	NL_S equ $-NL
 
-	; 1 1 0
-	; 0 0 0
-	; 0 1 0
-	ARRAY dd 1,1,0,0,0,0,0,1,0
+	;1,1,0,0,0
+	;0,0,1,0,0
+	;0,1,0,1,0
+	;0,0,0,1,0
+	;0,1,0,0,1
 
-	ROW_LEN dd 3
-	COL_LEN dd 3
-	ARRAY_LEN dd 9
+	ARRAY dd 1,1,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,1,0,0,1,0,0,1
+
+	ROW_LEN dd 5
+	COL_LEN dd 5
+	ARRAY_LEN dd 25
 
 	msg db 'index : '
 	msg_s equ $-msg

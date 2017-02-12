@@ -19,7 +19,7 @@ section .data
 	NL db 0xa
 	NL_S equ $-NL
 
-	ARRAY times 200 db 0
+	ARRAY times 200 dd 0
 	ARRAY_LEN dd 200
 	ROW_LEN dd 20
 
@@ -39,7 +39,7 @@ _start:
 	clear_screen
 	call print_array
 	mov eax, [CURRENT]
-	mov byte [ARRAY+eax], 1
+	mov [ARRAY+eax], dword 1
 	inc byte [CURRENT]
 
 	call wait_loop
