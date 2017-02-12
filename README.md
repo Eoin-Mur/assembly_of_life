@@ -6,4 +6,5 @@ Implemntation of conways game of life ( https://en.wikipedia.org/wiki/Conway's_G
 nasm -f elf -F dwarf -g life.asm # the -F and -g options are just used for writing the symbols for gdb
 
 ld -m elf_i386 -o life life.o
+
 ./life
